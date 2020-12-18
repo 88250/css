@@ -17,5 +17,5 @@ func (sr *CSSStyleRule) Text() string {
 		decls = append(decls, s.Text())
 	}
 
-	return fmt.Sprintf("%s {\n    %s\n}", sr.SelectorText, strings.Join(decls, ";\n"))
+	return fmt.Sprintf("%s {\n%s\n}", sr.SelectorText, strings.Join(decls, ";\n"))
 }
