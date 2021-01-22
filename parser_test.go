@@ -127,3 +127,13 @@ func TestNotSupportedAtRule(t *testing.T) {
 		assert.Equal(t, css, Parse(rule))
 	}
 }
+
+//func TestComment(t *testing.T) {
+//	src := `/* 根 */
+//:root {
+//    /* 主色 */
+//    --b3-theme-primary: #4285f4;
+//}`
+//	css := Parse(src)
+//	assert.Equal(t, ".roo", css.CssRuleList[0].Style.SelectorText)
+//}
